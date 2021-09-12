@@ -5,7 +5,6 @@ const router = express.Router();
 const User = Mongoose.model("User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const requireLogin = require("../middleware/requireLogin");
 const validator = require("validator");
 const nodemailer = require("nodemailer");
 const crypto = require("crypto");
@@ -16,10 +15,6 @@ auth:{
     user:process.env.MAIL,
     pass:process.env.MAIL_PASS
 }
-});
-
-router.get("/",requireLogin,function(req,res){
-    res.send("Hello");
 });
 
 router.post("/signup",(req,res)=>{
