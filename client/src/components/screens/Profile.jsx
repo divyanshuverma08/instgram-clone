@@ -2,6 +2,7 @@ import React , {useEffect, useState , useContext} from 'react';
 import {userContext} from "../../App";
 import Popup from './Popup';
 import M from "materialize-css";
+require('dotenv').config();
 
 export default function Profile() {
   const {state ,dispatch} = useContext(userContext);

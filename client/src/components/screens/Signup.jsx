@@ -2,6 +2,7 @@ import React, {useState , useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import axios from "axios";
 import M from "materialize-css";
+require('dotenv').config();
 
 export default function Signup() {
   const [image,setImage] = useState("");

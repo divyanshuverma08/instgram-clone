@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import M from "materialize-css";
 import { useHistory} from 'react-router';
-
+require('dotenv').config();
 export default function CreatePost() {
   
   const [post,setPost] = useState({
@@ -45,7 +45,7 @@ export default function CreatePost() {
       data.append("file",image);
       data.append("upload_preset","insta-clone");
       data.append("cloud_name","divyanshu08");
-      fetch("https://api.cloudinary.com/v1_1/divyanshu08/image/upload",{
+      fetch(process.env.REACT_APP_CLOUD_API,{
           method:"post",
           body: data
       })
