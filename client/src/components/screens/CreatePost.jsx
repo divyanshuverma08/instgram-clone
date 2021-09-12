@@ -45,7 +45,7 @@ export default function CreatePost() {
       data.append("file",image);
       data.append("upload_preset","insta-clone");
       data.append("cloud_name","divyanshu08");
-      fetch(process.env.REACT_APP_CLOUD_API,{
+      fetch("https://api.cloudinary.com/v1_1/divyanshu08/image/upload",{
           method:"post",
           body: data
       })
