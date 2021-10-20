@@ -59,8 +59,8 @@ export default function Navbar() {
     return (         
   <nav>
     <div className="nav-wrapper white">
-      <Link to={state ? ("/") : ("/signin")} className="brand-logo">Instagram</Link>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
+      <Link to={state ? ("/") : ("/signin")} className="brand-logo left">Instagram</Link>
+      <ul className="right ">
       {renderList()}
       </ul>
     </div>
