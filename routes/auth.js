@@ -10,12 +10,20 @@ const nodemailer = require("nodemailer");
 const crypto = require("crypto");
 
 const transporter = nodemailer.createTransport({
-service:"outlook",
+service:"gmail",
 auth:{
     user:process.env.MAIL,
     pass:process.env.MAIL_PASS
 }
 });
+
+transporter.verify((error, success) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Server is ready to take messages');
+    }
+  });
 
 router.post("/signup",(req,res)=>{
   const {name,email,password,pic} = req.body;
@@ -49,7 +57,7 @@ router.post("/signup",(req,res)=>{
                     .then(user=>{
                         transporter.sendMail({
                             to:user.email,
-                            from:' insta@no-reply.com <divyanshuverma09@outlook.com>',
+                            from:' insta@no-reply.com <shelly.dv08@gmail.com>',
                             subject:"Signup success",
                             html:"<h1>Welcome to insta clone</h1>"
                         }).then((res) => console.log("Successfully sent" + res))
