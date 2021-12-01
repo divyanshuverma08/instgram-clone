@@ -15,12 +15,13 @@ export default function Reset() {
   function handleClick(){
     axios.post("/reset-password",user,options) 
     .then(res=>{
-      M.toast({html: res.data.message, classes:"#1de9b6 teal accent-3"});
+      console.log(res.data.message);
+     M.toast({html: res.data.message, classes:"#1de9b6 teal accent-3"});
       history.push("/signin");
     })
     .catch(err=>{
       if (err.response) {
-        M.toast({html: err.response.data.error, classes:"#c62828 red darken-3"});
+      M.toast({html: err.response.data.error, classes:"#c62828 red darken-3"});
         console.log(err.response.status);
       }
     });
