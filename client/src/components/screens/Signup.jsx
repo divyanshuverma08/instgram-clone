@@ -77,7 +77,7 @@ export default function Signup() {
     return (
         <div className="my-card">
         <div className="card auth-card input-field">
-          <h2>Instagram</h2>
+          <h2>photoBag</h2>
           <input onChange={handleChange} value={user.name} name="name" type="text" placeholder="name"/>
           <input onChange={handleChange} value={user.email} name="email" type="email" placeholder="email"/>
           <input onChange={handleChange} value={user.password} name="password" type="password" placeholder="password"/>
@@ -91,7 +91,7 @@ export default function Signup() {
             </div>
             </div>
           <button onClick={handleClick} className="btn waves-effect waves-light #1565c0 blue darken-3">Sign Up</button>
-          <h5><Link to="/signup">Already have an account ?</Link></h5>
+          <h5><Link to="/signin">Already have an account ?</Link></h5>
     </div>
   </div>
     )

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body{
   background-color: #FAFAFA;
@@ -9,7 +10,9 @@ a{
 }
 
 .brand-logo{
-  font-family: 'Grand Hotel', cursive;
+  /* font-family: 'Grand Hotel', cursive; */
+  font-family: 'Lobster', cursive;
+  margin-left: 10px;
 }
 
 .my-card{
@@ -20,6 +23,11 @@ a{
   text-align: center;
   max-width: 400px;
   margin: 20px auto;
+  border-radius: 10px;
+}
+
+.auth-card h2{
+  font-family: 'Lobster', cursive;
 }
 
 /* label underline focus color */
@@ -105,6 +113,7 @@ grid-template-columns: 1fr 1fr;
   margin: 26px auto;
   max-width: 480px;
   height: max-content;
+  border-radius: 10px;
 }
 
 /* Post */
@@ -118,6 +127,7 @@ grid-template-columns: 1fr 1fr;
 
 .material-icons{
   cursor: pointer;
+  margin-right: 10px;
 }
 
 /* Popup style */

@@ -59,7 +59,7 @@ export default function Navbar() {
     return (         
   <nav>
     <div className="nav-wrapper white">
-      <Link to={state ? ("/") : ("/signin")} className="brand-logo left">Instagram</Link>
+      <Link to={state ? ("/") : ("/signin")} className="brand-logo left">photoBag</Link>
       <ul className="right ">
       {renderList()}
       </ul>

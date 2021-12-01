@@ -139,6 +139,7 @@ router.delete("/delete/post/:postId",requireLogin,(req,res)=>{
 router.delete("/delete/comment/:postId",requireLogin,(req,res)=>{
     Post.findByIdAndUpdate(req.params.postId,                    
         {$pull:{comments:{_id:req.body.id}}},{new:true})
+        .populate("postedBy","_id name pic")
         .populate("comments.postedBy","_id name")
         .exec((err,result)=>{
             if(err){
