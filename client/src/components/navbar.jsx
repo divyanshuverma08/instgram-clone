@@ -17,7 +17,7 @@ export default function Navbar() {
     if(state){
         return(
           <>
-          <li><i data-target="modal1" className="material-icons modal-trigger" style={{color:"black"}}>search</i></li>
+          <li><i data-target="modal1" className="material-icons modal-trigger" style={{color:"white"}}>search</i></li>
           <li><Link to="/createpost">Post</Link></li>
           <li><Link to="/profile">Profile</Link></li>
           <li><Link to="/myfollowingpost">MyFollowing</Link></li>
@@ -26,7 +26,7 @@ export default function Navbar() {
             dispatch({type:"CLEAR"});
             history.push("/signin");
           }} 
-          className="btn #1565c0 blue darken-3" >Logout</button></li>
+          className="btn #1565c0 black darken-3" >Logout</button></li>
           </>
         ) 
     }else{
@@ -59,7 +59,7 @@ export default function Navbar() {
     return (         
   <nav>
     <div className="nav-wrapper white">
-      <Link to={state ? ("/") : ("/signin")} className="brand-logo left">photoBag</Link>
+      <Link to={state ? ("/") : ("/signin")} className="brand-logo left">Photobag</Link>
       <ul className="right ">
       {renderList()}
       </ul>

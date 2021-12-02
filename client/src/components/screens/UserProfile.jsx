@@ -81,9 +81,9 @@ export default function UserProfile() {
                </div>
              </div>
              {userProfile.user.followers.includes(state._id) ? 
-                <button style={{margin:"10px" ,  gridColumn:"2/3" , width:"50%"}} onClick={unFollowUser} className="btn waves-effect waves-light #1565c0 blue darken-3">Unfollow</button>
+                <button style={{margin:"10px" ,  gridColumn:"2/3" , width:"50%"}} onClick={unFollowUser} className="btn waves-effect waves-light black darken-3">Unfollow</button>
                 : 
-                <button style={{margin:"10px" ,  gridColumn:"2/3" , width:"50%"}} onClick={followUser} className="btn waves-effect waves-light #1565c0 blue darken-3">Follow</button>
+                <button style={{margin:"10px" ,  gridColumn:"2/3" , width:"50%"}} onClick={followUser} className="btn waves-effect waves-light black darken-3">Follow</button>
                }
           </div>
           <hr style={{borderTop:"1px solid grey" , width:"55%" ,  position:"relative" , bottom:"30px"}} />

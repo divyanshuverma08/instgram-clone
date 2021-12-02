@@ -77,12 +77,12 @@ export default function Signup() {
     return (
         <div className="my-card">
         <div className="card auth-card input-field">
-          <h2>photoBag</h2>
+          <h2>Photobag</h2>
           <input onChange={handleChange} value={user.name} name="name" type="text" placeholder="name"/>
           <input onChange={handleChange} value={user.email} name="email" type="email" placeholder="email"/>
           <input onChange={handleChange} value={user.password} name="password" type="password" placeholder="password"/>
           <div className="file-field input-field">
-            <div className="btn waves-effect waves-light #1565c0 blue darken-3">
+            <div className="btn waves-effect waves-light black darken-3">
                 <span>Uplaod pic</span>
                 <input type="file" onChange={(e)=>{setImage(e.target.files[0]);}} name="image"/>
             </div>
@@ -90,7 +90,7 @@ export default function Signup() {
                 <input className="file-path validate" type="text"/>
             </div>
             </div>
-          <button onClick={handleClick} className="btn waves-effect waves-light #1565c0 blue darken-3">Sign Up</button>
+          <button onClick={handleClick} className="btn waves-effect waves-light black darken-3">Sign Up</button>
           <h5><Link to="/signin">Already have an account ?</Link></h5>
     </div>
   </div>

@@ -71,7 +71,7 @@ export default function CreatePost() {
             <input onChange={handleChange} value={post.title} name="title" type="text" placeholder="title"/>
             <input onChange={handleChange}  value={post.body} name="body" type="text" placeholder="content"/>
             <div className="file-field input-field">
-            <div className="btn waves-effect waves-light #1565c0 blue darken-3">
+            <div className="btn waves-effect waves-light black darken-3">
                 <span>Uplaod Image</span>
                 <input type="file" onChange={(e)=>{setImage(e.target.files[0]);}} name="image"/>
             </div>
@@ -79,7 +79,7 @@ export default function CreatePost() {
                 <input className="file-path validate" type="text"/>
             </div>
             </div>
-            <button onClick={handleSubmit} className="btn waves-effect waves-light #1565c0 blue darken-3">Submit</button>
+            <button onClick={handleSubmit} className="btn waves-effect waves-light black darken-3">Submit</button>
         </div>
     )
 }

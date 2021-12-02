@@ -39,9 +39,9 @@ export default function Signin() {
     return (
         <div className="my-card">
             <div className="card auth-card input-field">
-              <h2>Instagram</h2>
+              <h2>Photobag</h2>
               <input  onChange={handleChange} value={user.password} name="password" type="password" placeholder="enter new password"/>
-              <button onClick={handleClick} className="btn waves-effect waves-light #1565c0 blue darken-3" type="submit" name="action">submit</button>
+              <button onClick={handleClick} className="btn waves-effect waves-light black darken-3" type="submit" name="action">submit</button>
               <h5><Link to="/signup">Create Account ?</Link></h5>
         </div>
       </div>

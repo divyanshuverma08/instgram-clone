@@ -113,7 +113,7 @@ export default function Profile() {
                src={state.pic ? state.pic : "https://res.cloudinary.com/divyanshu08/image/upload/v1631127004/dummy-image_guweo7.jpg"} />
              </div>            
             <div className="upload">
-                <label htmlFor="files" className="btn #1565c0 blue darken-3">Select Image</label>
+                <label htmlFor="files" className="btn black darken-3">Select Image</label>
                 <input id="files" style={{visibility:"hidden"}}type="file" onChange={(e)=>{updatePhoto(e.target.files[0]);}} name="image" placeholder="upload" />                        
              </div>                 
              <div className="profile-content">
