@@ -57,7 +57,7 @@ router.post("/signup",(req,res)=>{
                     .then(user=>{
                         transporter.sendMail({
                             to:user.email,
-                            from:' insta@no-reply.com <shelly.dv08@gmail.com>',
+                            from:' photobag@no-reply.com <shelly.dv08@gmail.com>',
                             subject:"Signup success",
                             html:"<h1>Welcome to insta clone</h1>"
                         }).then((res) => console.log("Successfully sent" + res))
@@ -123,7 +123,7 @@ router.post("/signup",(req,res)=>{
               user.save().then(result=>{
                   transporter.sendMail({
                       to:user.email,
-                      from:' insta@no-reply.com <divyanshuverma09@outlook.com>',
+                      from:' photobag@no-reply.com <divyanshuverma09@outlook.com>',
                       subject:"password mail",
                       html:`
                       <p>You requested for password reset</p>
